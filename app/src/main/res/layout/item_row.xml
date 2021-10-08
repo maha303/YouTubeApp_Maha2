@@ -9,11 +9,12 @@
         android:id="@+id/cw1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#D310B5A4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:cardCornerRadius="8dp"
-        android:layout_margin="16dp">
+        app:cardCornerRadius="4dp"
+        android:layout_margin="8dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,6 +23,7 @@
 
             <Button
                 android:id="@+id/cwBtn1"
+                android:backgroundTint="#00897B"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Button" />
