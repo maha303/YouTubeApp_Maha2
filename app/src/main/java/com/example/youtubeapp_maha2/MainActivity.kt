@@ -55,5 +55,25 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        super.onConfigurationChanged(newConfig)
+        if(newConfig.orientation==Configuration.ORIENTATION_LANDSCAPE)
+        {
+            youTubePlayerView.enterFullScreen()
+        }else if(newConfig.orientation==Configuration.ORIENTATION_PORTRAIT){
+            youTubePlayerView.exitFullScreen()
+        }
+    }
 
+    override fun onSaveInstanceState(outState: Bundle, outPersistentState: PersistableBundle) {
+        super.onSaveInstanceState(outState, outPersistentState)
+        outState.putInt("Video",Video)
+        outState.putFloat("times", time)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        Video=savedInstanceState.getInt("Video",0)
+        time=savedInstanceState.getFloat("times",0f)
+    }
 }
