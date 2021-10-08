@@ -20,12 +20,26 @@
         android:orientation="vertical">
 
         <TextView
+            android:background="#79BDB7"
+            android:id="@+id/textView2"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:padding="11dp"
+            android:text="Many areas of life are positively impacted by the act of meditation, including mindfulness, stress management, physical health, creativity, anxiety reduction, focus, relationship management, problem solving ability and overall outlook on life.
+Meditation is important in recovery because it aids in a number of areas imperative to support recovery, including consistency of action, discipline, promotion of mental clarity, physical health and overall meditation works to slow down the incessant chatter of the mind.
+" />
+
+        <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="10-Minute Meditation music"
-            android:textSize="24dp"
-            android:textAlignment="center"
+            android:text="Here is a list of 10-Minute Meditation music :"
+            android:textSize="14dp"
+            android:padding="11dp"
+            android:background="#9E9D9D"
             android:textColor="@color/black"
             android:textStyle="bold"/>
 
